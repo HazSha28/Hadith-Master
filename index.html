@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hadith Master</title>
+    <link rel="icon" href="/photos/Simple Lined White Blog Landing Page Wireframe Website UI Prototype.jpg">
+    <link rel="stylesheet" href="/Style.css">
+</head>
+<body>
+    <div class="header">
+        <img src="/photos/Simple Lined White Blog Landing Page Wireframe Website UI Prototype-1.png" width="60" height="50">
+        HADITH MASTER
+        <div class="navbar">
+            <a href="/frontpage.html">HOME</a>
+            <a href="/aboutus.html">ABOUT US</a>
+            <a href="/help.html">HELP</a>
+        </div>
+    </div>
+    <div id="input-section" class="section">
+        <div class="input-container">
+            <h4>Please type in the gist of the hadith or select any of the below criteria to ensure accurate search results.</h4>
+            <textarea class="input-box" placeholder="Enter Hadith gist here..."></textarea>
+                    <select class="dropdown">
+                        <option value="">Book Name</option>
+                        <option value="book1" style="color: rgb(178, 92, 27);">Sahih al-Bukhari</al-Bukhari></option>
+                        <option value="book2" style="color: rgb(178, 92, 27);">Sahih Muslim</option>
+                        <option value="book3" style="color: rgb(178, 92, 27);">sunan an-Nasa'i</option>
+                        <option value="book2" style="color: rgb(178, 92, 27);">Sunan Abi Dawud</option>
+                        <option value="book2" style="color: rgb(178, 92, 27);">Jami'at-Tirmidhi</option>
+                        <option value="book2" style="color: rgb(178, 92, 27);">Sunan Ibn Majah</option>
+                        <!-- <option value="book2">Muwatta Malik</option>
+                        <option value="book2">Musnad Ahmad</option>
+                        <option value="book2">Collections of Forty</option>
+                        <option value="book2">Riyadh as-Salihin</option>
+                        <option value="book2">Mishkat al Masabih</option>
+                        <option value="book2">Al-adab Al-Mufrad</option>
+                        <option value="book2">Ash-Shama'il al-Muhammadiyah</option>
+                        <option value="book2">Bulugh al-Maram</option>
+                        <option value="book2">Hisn al-Muslim</option> -->
+                    </select>
+                    <select class="dropdown">
+                        <option value="">Author's Name</option>
+                        <option value="author1">Imam al-Bukhaari</option>
+                        <option value="author2">Imam Muslim</option>
+                        <option value="author2">Imam Abu Dawood</option>
+                        <option value="author4">Imam al-Tirmidhi</option>
+                        <option value="author2">Imam al-Nasaa’i</option>
+                        <option value="author2">Imam Ibn Maajah</option>
+                    </select>
+                    <select class="dropdown">
+                        <option value="">Narrator's Names</option>
+                        <option value="narrator1" style="color: rgb(178, 92, 27);">Abu Hurairah (Abdur-Rahmaan)(radi-Allaahu ‘anhu) </option>
+                        <option value="narrator2" style="color: rgb(178, 92, 27);">Abdullaah Ibn Abbaas (radi-Allaahu ‘anhu)</option>
+                        <option value="narrator2" style="color: rgb(178, 92, 27);">Aa’ishah Siddeeqa (radi-Allaahu ‘anhaa)</option>
+                        <option value="narrator2" style="color: rgb(178, 92, 27);">Abdullaah Ibn Umar (radi-Allaahu ‘anhu) </option>
+                        <option value="narrator2" style="color: rgb(178, 92, 27);">Jaabir Ibn Abdullaah (radi-Allaahu ‘anhu)radi-Allaahu ‘anhu)</option>
+                        <option value="narrator2" style="color: rgb(178, 92, 27);">Anas Ibn Maalik (radi-Allaahu ‘anhu)</option>
+                        <option value="narrator2" style="color: rgb(178, 92, 27);">Abu Sa’eed al-Khudree (radi-Allaahu ‘anhu) </option>
+                        <option value="narrator2">Abdullaah Ibn Amr Ibn al-Aas (radi-Allaahu ‘anhu) </option>
+                        <option value="narrator2">Alee Ibn Abee Taalib (radi-Allaahu ‘anhu)</option>
+                        <option value="narrator2">Umar Ibn al-Khattaab (radi-Allaahu ‘anhu) </option>
+                        <option value="narrator2">Abu Bakr as-Siddeeq (radi-Allaahu ‘anhu)  </option>
+                        <option value="narrator2">Uthmaan Ibn Affaan Dhun-Noorain (radi-Allaahu ‘anhu) </option>
+                        <option value="narrator2">Umm Salamah (radi-Allaahu ‘anhaa) </option>
+                        <option value="narrator2">Abu Moosaa al-Asha’aree (radi-Allaahu ‘anhu) </option>
+                        <option value="narrator2">Abu Dharr al-Ghaffaree (radi-Allaahu ‘anhu) </option>
+                        <option value="narrator2">Abu Ayyoob al-Ansaaree (radi-Allaahu ‘anhu)</option>
+                        <option value="narrator2">Ubayy Ibn Ka’ab (radi-Allaahu ‘anhu) </option>
+                        <option value="narrator2">Mu’aadh Ibn Jabal (radi-Allaahu ‘anhu) </option>
+                        <option value="narrator2" style="color: rgb(124, 6, 6);">Saalim Ibn Abdullaah Ibn Umar</option>
+                        <option value="narrator2" style="color: rgb(124, 6, 6);">Urwah Ibn Zubair </option>
+                        <option value="narrator2" style="color: rgb(124, 6, 6);">Sa’eed Ibn al-Mussayab </option>
+            
+                    </select>
+                    <button class="btn" onclick="navigateToInput()">Search</button>
+        </div>
+    </div>
+    <script>
+    function navigateToInput() {
+        document.getElementById('search-section').classList.remove('active');
+        document.getElementById('input-section').classList.add('active');
+    }
+    </script>
+</body>
+</html>
