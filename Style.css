@@ -90,8 +90,6 @@ h4 {
     font-size: 16px;
     align-items: center;
     border-radius: 5px;
-    border: 1px solid #003c43;
-    border-style: dashed;
     margin: 10px 0;
     font-family: 'Times New Roman', Times, serif;
     color: #3c5646;
@@ -105,7 +103,7 @@ h4 {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration: none;
+    text-decoration:hidden;
     display: inline-block;
     margin-top: 20px;
     font-family: 'Times New Roman', Times, serif;
