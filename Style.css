@@ -1,5 +1,5 @@
 body {
-    font-family:'Times New Roman', Times, serif;
+    font-family: 'Times New Roman', Times, serif;
     background-image: url('/photos/5.jpg');
     margin: 0;
     padding: 0;
@@ -7,7 +7,7 @@ body {
 .header {
     background: linear-gradient(to right, #003c43, #4f8671, #003c43);
     color: rgb(250, 230, 204);
-    padding:0;
+    padding: 0;
     font-size: 20px;
     text-align: center;
     display: flex;
@@ -33,37 +33,26 @@ body {
 .navbar {
     margin-left: auto;
     display: flex;
-    justify-content:end;
+    justify-content: end;
 }
 .navbar a {
     color: rgb(250, 230, 204);
     padding: 14px 20px;
     text-decoration: none;
     font-size: 14px;
-    border-radius:15px;
-    border-style:outset;
+    border-radius: 15px;
+    border-style: outset;
     border: #003c43;
 }
 .navbar a:hover {
-    background:radial-gradient(circle,#ecdfcc,#939d7c);
-    color :#003c43;
-    border-radius:5px;
+    background: radial-gradient(circle, #ecdfcc, #939d7c);
+    color: #003c43;
+    border-radius: 5px;
     border-style: outset;
     border: #003c43;
-    
 }
-/* .search-container{
-    background:radial-gradient(circle,#ecdfcc,#939d7c);
-    padding: 30px 50px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    width: 500px;
-    align-items: center;
-    font-family: 'Times New Roman', Times, serif;
-} */
 .input-container {
-    background:radial-gradient(circle,#ecdfcc,#939d7c);
+    background: radial-gradient(circle, #ecdfcc, #939d7c);
     padding: 30px 50px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -82,49 +71,35 @@ h4 {
     font-size: 16px;
     border-radius: 2px;
     border: 1px solid #003c43;
-    border-style:dashed;
+    border-style: dashed;
     margin: 10px 0;
     font-family: 'Times New Roman', Times, serif;
-    color:#3c5646;
+    color: #3c5646;
     border-radius: 15px;
-    box-shadow:#2d4036;
-    
+    box-shadow: #2d4036;
 }
-/* .input-box {
-    width: 95%;
-    padding: 10px;
-    font-size: 16px;
-    align-items: center;
-    border-radius: 5px;
-    border: 1px solid #003c43;
-    border-style:dashed;
-    margin: 10px 0;
-    font-family: 'Times New Roman', Times, serif;
-    color:#3c5646;
-    border-radius: 15px;
-} */
 .input-box {
     resize: none;
     height: 70px;
-    align-items:center;
+    align-items: center;
     border: 1.3px solid #003c43;
-    border-style:dashed;
-    box-shadow:#003c43;
+    border-style: dashed;
+    box-shadow: #003c43;
     width: 95%;
     padding: 10px;
     font-size: 16px;
     align-items: center;
     border-radius: 5px;
     border: 1px solid #003c43;
-    border-style:dashed;
+    border-style: dashed;
     margin: 10px 0;
     font-family: 'Times New Roman', Times, serif;
-    color:#3c5646;
+    color: #3c5646;
     border-radius: 15px;
 }
 .btn {
-    background:linear-gradient(to right,#003c43,#4f8671,#003c43);
-    color:beige;
+    background: linear-gradient(to right, #003c43, #4f8671, #003c43);
+    color: beige;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
@@ -132,17 +107,99 @@ h4 {
     cursor: pointer;
     text-decoration: none;
     display: inline-block;
-    margin-top:20px;
+    margin-top: 20px;
     font-family: 'Times New Roman', Times, serif;
 }
 .btn:hover {
-    background:radial-gradient(circle,#ecdfcc,#939d7c);
-    color :#003c43;
-    border-radius:5px;
-    border-style:outset;
+    background: radial-gradient(circle, #ecdfcc, #939d7c);
+    color: #003c43;
+    border-radius: 5px;
+    border-style: outset;
     border: #003c43;
 }
-.aboutus,.help{
+.aboutus, .help {
     padding: 20px;
     color: #003c43;
+}
+
+/* Media Queries */
+
+/* Mobile - Default */
+@media (max-width: 600px) {
+    .header {
+        font-size: 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .input-container {
+        width: 90%;
+        padding: 20px;
+    }
+
+    .dropdown, .input-box {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+/* Tablet - Min-width: 601px to 1024px */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .header {
+        font-size: 18px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    .input-container {
+        width: 80%;
+    }
+
+    .dropdown, .input-box {
+        font-size: 15px;
+    }
+
+    .btn {
+        font-size: 15px;
+        padding: 10px 18px;
+    }
+}
+
+/* Laptop/Desktop - Min-width: 1025px */
+@media (min-width: 1025px) {
+    .header {
+        font-size: 20px;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        padding: 14px 20px;
+    }
+
+    .input-container {
+        width: 500px;
+    }
+
+    .dropdown, .input-box {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
 }
