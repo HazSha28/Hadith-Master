@@ -71,7 +71,7 @@ h4 {
     font-size: 16px;
     border-radius: 2px;
     border: 1px solid #003c43;
-    border-style: dashed;
+    border-style:hidden;
     margin: 10px 0;
     font-family: 'Times New Roman', Times, serif;
     color: #3c5646;
@@ -83,7 +83,7 @@ h4 {
     height: 70px;
     align-items: center;
     border: 1.3px solid #003c43;
-    border-style: dashed;
+    border-style:hidden;
     box-shadow: #003c43;
     width: 95%;
     padding: 10px;
@@ -120,6 +120,7 @@ h4 {
 .aboutus, .help {
     padding: 20px;
     color: #003c43;
+    font-size: 16px;
 }
 
 /* Media Queries */
