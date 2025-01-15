@@ -7,11 +7,12 @@ body {
 .header {
     background: linear-gradient(to right, #003c43, #4f8671, #003c43);
     color: rgb(250, 230, 204);
-    padding: 0;
+    padding: 10px 20px;
     font-size: 20px;
     text-align: center;
     display: flex;
-    align-items:center;
+    justify-content: space-between;
+    align-items: center;
     gap: 2px; 
     font-family: 'Times New Roman', Times, serif;
 }
@@ -19,10 +20,9 @@ body {
     display: none;
     height: calc(100vh - 80px);
     padding: 20px;
-    /* background:radial-gradient(circle,#ecdfcc,#939d7c); */
-    display: flex;
     background-image: url('/photos/5.jpg');
     background-color: #fef7de;
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -43,6 +43,7 @@ body {
     border-radius: 15px;
     border-style: outset;
     border: #003c43;
+    transition: all 0.3s ease;
 }
 .navbar a:hover {
     background: radial-gradient(circle, #ecdfcc, #939d7c);
@@ -50,6 +51,10 @@ body {
     border-radius: 5px;
     border-style: outset;
     border: #003c43;
+}
+.navbar a:focus {
+    outline: 2px dashed #003c43;
+    outline-offset: 3px;
 }
 .input-container {
     background: radial-gradient(circle, #ecdfcc, #939d7c);
@@ -69,32 +74,42 @@ h4 {
     width: 100%;
     padding: 10px;
     font-size: 16px;
-    border-radius: 2px;
-    border: 1px solid #003c43;
-    border-style:hidden;
     margin: 10px 0;
     font-family: 'Times New Roman', Times, serif;
     color: #3c5646;
     border-radius: 15px;
-    box-shadow: #2d4036;
+    border: 1px solid #003c43;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+.dropdown:hover {
+    /* background-color:beige; */
+    color: #003c43;
+    font-size:medium;
+    border-style: hidden;
 }
 .input-box {
     resize: none;
     height: 70px;
-    align-items: center;
-    border: 1.3px solid #003c43;
-    border-style:hidden;
-    box-shadow: #003c43;
     width: 95%;
     padding: 10px;
     font-size: 16px;
-    align-items: center;
-    border-radius: 5px;
     margin: 10px 0;
     font-family: 'Times New Roman', Times, serif;
     color: #3c5646;
     border-radius: 15px;
+    border: 1px solid #003c43;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
 }
+
+.input-box:hover {
+    border-style: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    color: #003c43;
+    font-size: medium;
+}
+
 .btn {
     background: linear-gradient(to right, #003c43, #4f8671, #003c43);
     color: beige;
@@ -103,17 +118,21 @@ h4 {
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    text-decoration:hidden;
+    text-decoration: none;
     display: inline-block;
     margin-top: 20px;
     font-family: 'Times New Roman', Times, serif;
+    transition: all 0.3s ease;
 }
 .btn:hover {
     background: radial-gradient(circle, #ecdfcc, #939d7c);
     color: #003c43;
-    border-radius: 5px;
-    border-style: outset;
-    border: #003c43;
+    border: 1px solid #003c43;
+    font-size: medium;
+}
+.btn:focus {
+    outline: 2px dashed #003c43;
+    outline-offset: 3px;
 }
 .aboutus, .help {
     padding: 20px;
@@ -127,8 +146,6 @@ h4 {
 @media (max-width: 600px) {
     .header {
         font-size: 16px;
-        /* flex-direction: column;
-        align-items:flex-start; */
     }
 
     .navbar a {
@@ -155,7 +172,6 @@ h4 {
 @media (min-width: 601px) and (max-width: 1024px) {
     .header {
         font-size: 18px;
-        /* align-items:flex-start; */
     }
 
     .navbar a {
@@ -181,8 +197,6 @@ h4 {
 @media (min-width: 1025px) {
     .header {
         font-size: 18px;
-        /* flex-direction:column;
-        align-items:flex-start; */
     }
 
     .navbar a {
@@ -196,6 +210,7 @@ h4 {
 
     .dropdown, .input-box {
         font-size: 16px;
+        border-style: hidden;
     }
 
     .btn {
